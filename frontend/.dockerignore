@@ -1,0 +1,17 @@
+# Исключаем тяжёлые видео файлы
+emulators/lib/retroarch/assets/cores/Video/
+**/*.mov
+**/*.mp4
+**/*.avi
+**/*.mkv
+**/*.webm
+
+# Node modules если есть
+node_modules/
+.npm
+.cache/
+
+# Временные файлы
+*.tmp
+*.swp
+*~
