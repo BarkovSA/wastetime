@@ -81,15 +81,20 @@
 - nginx-wastetime.ru.conf - Конфигурация nginx
 
 🔧 Управление Docker:
-  Запуск:     docker-compose up -d
-  Остановка:  docker-compose down
-  Логи:       docker-compose logs -f
-  Рестарт:    docker-compose restart
 
+  Запуск:     docker-compose up -d
+  
+  Остановка:  docker-compose down
+  
+  Логи:       docker-compose logs -f
+  
+  Рестарт:    docker-compose restart
+  
 📌 ВАЖНО - Законность ROM:
 - Используйте только собственные бэкапы легально купленных игр
 - Или бесплатные homebrew/public domain ROM
 - Проект не включает коммерческие ROM
+
 
 
 
