@@ -1,0 +1,25 @@
+services:
+  frontend:
+    build: ./frontend
+    container_name: wastetime_front
+    ports:
+      - "80:80"
+    volumes:
+      - ./roms:/usr/share/nginx/html/roms:ro
+    networks:
+      - wastetime_network
+  backend:
+    build: ./backend
+    container_name: wastetime_back
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./roms:/app/roms:ro
+    environment:
+      - FLASK_ENV=production
+    networks:
+      - wastetime_network
+
+networks:
+  wastetime_network:
+    driver: bridge
